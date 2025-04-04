@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Pertanyaan</title>
+</head>
+<body>
+    <h1>Generator Pertanyaan</h1>
+    <p id="question">Klik tombol untuk mendapatkan pertanyaan.</p>
+    <button onclick="generateQuestion()">Dapatkan Pertanyaan</button>
+
+    <script>
+        function generateQuestion() {
+            const questions = [
+                "Apa warna favoritmu?",
+                "Siapa pahlawan favoritmu?",
+                "Apa makanan yang paling kamu suka?",
+                "Jika bisa punya kekuatan super, apa yang kamu pilih?"
+            ];
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            document.getElementById("question").innerText = questions[randomIndex];
+        }
+    </script>
+</body>
+</html>
