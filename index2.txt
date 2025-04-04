@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Pertanyaan Penciptaan Manusia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        #question-box {
+            font-size: 20px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            background-color: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Generator Pertanyaan Tentang Penciptaan Manusia</h1>
+    <div id="question-box">Klik tombol di bawah untuk mendapatkan pertanyaan!</div>
+    <br>
+    <button onclick="generateQuestion()">Generate Pertanyaan</button>
+
+    <script>
+        const questions = [
+            "Bagaimana manusia pertama diciptakan menurut sains dan agama?",
+            "Apakah teori evolusi bertentangan dengan penciptaan manusia dalam agama?",
+            "Mengapa manusia memiliki kesadaran yang lebih tinggi dibanding makhluk lain?",
+            "Bagaimana jika penciptaan manusia adalah bagian dari simulasi besar?",
+            "Apa tujuan utama dari penciptaan manusia menurut berbagai kepercayaan?",
+            "Apakah DNA manusia menunjukkan bukti tentang proses penciptaan?",
+            "Bagaimana manusia bisa memiliki emosi, akal, dan spiritualitas?",
+            "Apakah mungkin ada spesies lain sebelum manusia yang telah punah?",
+            "Bagaimana jika manusia bukan makhluk paling cerdas di alam semesta?",
+            "Apakah ada bukti ilmiah yang mendukung teori penciptaan manusia secara instan?",
+            "Bagaimana jika manusia berevolusi menjadi bentuk yang lebih maju di masa depan?",
+            "Apakah ada hubungan antara penciptaan manusia dan lubang hitam?",
+            "Bagaimana sains menjelaskan asal-usul jiwa manusia?",
+            "Apakah kloning manusia bisa dianggap sebagai penciptaan ulang manusia?",
+            "Bagaimana teknologi bisa mengubah cara kita memahami penciptaan manusia?"
+        ];
+
+        function generateQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            document.getElementById("question-box").innerText = questions[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
